@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Problema 2</title>
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+       <link rel="stylesheet" href="/resources/demos/style.css">
+         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+      <div>
+      <label>Nombre:</label></n>
+      <input name="nombre" type="text" id="nombre"/><br>
+      </div>
+      <div>
+            <label>Apellidos:</label><input name="apellidos" type="text" id="apellidos">
+     </div>
+                
+
+
+      
+      <h3 id="Fecha de nacimiento">Fecha de nacimiento: </h3>
+
+      <button type="submit">Generar el Mensaje</button>
+      <p id="mensajeFinal">
+      </p>
+  </body>
+  <script>
+    $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+    $(document).ready(function() {
+      $( "button" ).click(function() {
+        var texto1 = $('#nombre').text();
+        var texto2 = $('#apellidos').text();
+        
+        $('#mensajeFinal').text("Su Nombre es : "+ texto1 + ".Su apellido es:  : "
+          + texto2);
+        console.log(texto1);
+      });
+    });
+  </script>
+  <p>Date: <input type="text" id="datepicker"></p>
+</body></html>
+
+
+ 
+
+
+ 
+ 
+
+ 
+ 
+ 
+
