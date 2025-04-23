@@ -1,22 +1,27 @@
+body {
+    margin: 100px;
+    padding: 0;
+}
 .uno {
-    background-color: mediumslateblue;
-    padding: 20px;
+    background-color:#9999FF;
+    padding: 10px;
     border-color: black;
     border-style: solid;
 }
 .mensaje {
-    background-color: beige;
-    padding: 20px;
-    font-size: medium;
+    background-color: #F3F3F3;
+    padding: 10px;
+    font-size: 30px;
     font-weight: bold;
-    border-color: gold;
+    border-color: #FFFF03;
     border-style: solid;
+    margin: 10px;
 }
 .dos {
-    background-color: coral;
+    background-color: #CE8845;
 }
 .comentario {
     color: white;
-    text-decoration: green;
-    text-decoration-line: blink;
+    border-bottom: 2px solid #0F8105;
+    margin-right: 10px;
 }
