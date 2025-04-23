@@ -1,0 +1,22 @@
+.uno {
+    background-color: mediumslateblue;
+    padding: 20px;
+    border-color: black;
+    border-style: solid;
+}
+.mensaje {
+    background-color: beige;
+    padding: 20px;
+    font-size: medium;
+    font-weight: bold;
+    border-color: gold;
+    border-style: solid;
+}
+.dos {
+    background-color: coral;
+}
+.comentario {
+    color: white;
+    text-decoration: green;
+    text-decoration-line: blink;
+}
