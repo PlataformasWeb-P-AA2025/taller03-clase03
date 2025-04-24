@@ -1,60 +1,58 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Problema 2</title>
-     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-       <link rel="stylesheet" href="/resources/demos/style.css">
-         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  </head>
-  <body>
-      <div>
-      <label>Nombre:</label></n>
-      <input name="nombre" type="text" id="nombre"/><br>
-      </div>
-      <div>
-            <label>Apellidos:</label><input name="apellidos" type="text" id="apellidos">
-     </div>
-                
+
+<head>
+  <meta charset="utf-8" />
+  <title>Problema 2</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+  <h2>Problema 2</h2>
+  <div>
+    <label>Nombre:</label><br>
+    <input name="nombre" type="text" id="nombre" /><br><br>
+
+    <label>Apellido:</label><br>
+    <input name="apellidos" type="text" id="apellidos" /><br><br>
+
+    <label>Fecha de nacimiento:</label><br>
+    <input type="text" id="datepicker" /><br><br>
+
+    <button type="button" id="generarMen">Generar el Mensaje</button>
+  </div>
 
 
-      
-      <h3 id="Fecha de nacimiento">Fecha de nacimiento: </h3>
+  <div>
+    <h3>Datos ingresados</h3>
+    <p id="mensajeFinal"></p>
+  </div>
 
-      <button type="submit">Generar el Mensaje</button>
-      <p id="mensajeFinal">
-      </p>
-  </body>
+
   <script>
-    $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-    $(document).ready(function() {
-      $( "button" ).click(function() {
-        var texto1 = $('#nombre').text();
-        var texto2 = $('#apellidos').text();
+    $(function () {
+      $("#datepicker").datepicker();
+    });
+
+    $(document).ready(function () {
+      $("#generarMen").click(function () {
         
-        $('#mensajeFinal').text("Su Nombre es : "+ texto1 + ".Su apellido es:  : "
-          + texto2);
-        console.log(texto1);
+        var nombre = $('#nombre').val();
+        var apellidos = $('#apellidos').val();
+        var fecha = $('#datepicker').val();
+
+
+        console.log(nombre);
+        console.log(apellidos);
+        console.log(fecha);
+
+        $('#mensajeFinal').html(nombre + "<br>" + apellidos + "<br>" + fecha);
       });
     });
   </script>
-  <p>Date: <input type="text" id="datepicker"></p>
-</body></html>
 
+</body>
 
- 
-
-
- 
- 
-
- 
- 
- 
-
+</html>
